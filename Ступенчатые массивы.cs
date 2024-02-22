@@ -60,7 +60,7 @@ public class StairDimensionalArray : BaseArray
 
     public override void Print()
     {
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < numbers.Length; i++)
         {
             int len = numbers[i].Length;
             for (int j = 0; j < len; j++)
@@ -75,7 +75,7 @@ public class StairDimensionalArray : BaseArray
     {
         decimal sum = 0;
         int divider = 0;
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < numbers.Length; i++)
         {
             for (int j = 0; j < numbers[i].Length; j++)
             {
@@ -89,7 +89,7 @@ public class StairDimensionalArray : BaseArray
     public decimal[] AverageInLines()
     {
         decimal[] AverageArr = new decimal[N];
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < numbers.Length; i++)
         {
             decimal sum = 0;
             for (int j = 0; j < numbers[i].Length; j++)
@@ -103,7 +103,7 @@ public class StairDimensionalArray : BaseArray
 
     public int[][] MadeWithmassiveSecondIndex()
     {
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < numbers.Length; i++)
         {
             for (int j = 0; j < numbers[i].Length; j++)
             {
