@@ -5,7 +5,6 @@ public class ClassFor_Main
 {
     public static void Main(string[] args)
     {
-        // Пример использования OneDimensionalArray
         Console.WriteLine("Вы хотите заполнить массив с консоли? Введите true если да, если случайными то false.");
         bool user = bool.Parse(Console.ReadLine());
         Console.WriteLine("Введите длину массива.");
@@ -32,11 +31,9 @@ public class ClassFor_Main
         array.Print();
 
         Console.WriteLine("Массив дней недели");
-        // Пример использования WeekDaysPrinter
         IPrintable weekDaysPrinter = new WeekDaysPrinter();
         weekDaysPrinter.Print();
 
-        // Добавьте использование TwoDimensionArray и StairDimensionalArray аналогично
         Console.WriteLine("Вы хотите заполнить массив с консоли? Введите true если да, если случайными то false.");
         bool Doubleuser = bool.Parse(Console.ReadLine());
         Console.WriteLine("Введите количество строк массива.");
